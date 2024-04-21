@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h2 {
+  margin-top: 0;
+}
+
+.remove-btn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.cart-summary h2 {
+  margin-top: 0;
+}
+
+.checkout-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}
+
+</style>
+<body>
+  <div class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="item-details">
+          <h2>Product 1</h2>
+          <p>Price: $20.00</p>
+          <input type="number" value="1" min="1">
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+      <!-- More cart items can be added here -->
+    </div>
+    <div class="cart-summary">
+      <h2>Cart Summary</h2>
+      <p>Total Items: <span id="total-items">1</span></p>
+      <p>Total Price: $<span id="total-price">20.00</span></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</body>
+</html>

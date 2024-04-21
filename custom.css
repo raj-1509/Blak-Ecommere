@@ -1,0 +1,35 @@
+.design-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  #design-area {
+    width: 60%;
+    height: 0;
+    padding-top: 80%; /* Aspect ratio for the T-shirt image */
+    position: relative;
+    background: url('https://i.pinimg.com/originals/62/98/b0/6298b026a65cf80bcf9dce061e9b79c9.png') center center no-repeat;
+    background-size: contain;
+  }
+  
+  #text-container,
+  #sticker-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #options {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+    

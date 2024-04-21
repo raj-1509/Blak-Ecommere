@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-shirt Designer</title>
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <div class="design-container">
+    <div id="design-area">
+      <div id="text-container"></div>
+      <div id="sticker-container"></div>
+    </div>
+    <div id="options">
+      <label for="text-input">Add Text:</label>
+      <input type="text" id="text-input">
+      <button onclick="addText()">Add</button><br>
+
+      <label for="font-select">Select Font:</label>
+      <select id="font-select">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+      </select><br>
+
+      <label for="font-size">Font Size:</label>
+      <input type="number" id="font-size" value="16"><br>
+
+      <label for="sticker-select">Add Sticker:</label>
+      <select id="sticker-select">
+        <option value="heart">Heart</option>
+        <option value="star">Star</option>
+        <option value="smiley">Smiley</option>
+      </select><br>
+
+      <button onclick="addSticker()">Add Sticker</button><br>
+
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="cart"></div>
+
+  <script src="custom.js"></script>
+</body>
+</html>
+
+
